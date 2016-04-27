@@ -1,0 +1,48 @@
+/*.center {
+  margin: 0 auto;
+}*/
+body {
+    font-family: "purista-web-n4","purista-web", Arial, Helvetica, sans-serif;
+}
+
+h3 {
+  font-size: .8rem;
+}
+.map_menu {
+  /*width: 600px;*/
+  text-align: center;
+}
+
+button {
+  background: #F4F4F4;
+  padding: 8px 20px;
+  border: 1px solid #ccc;
+  margin-right: -5px;
+}
+
+button:focus {
+  outline: none;
+}
+
+button.selected {
+  background: white;
+  padding-top: 10px;
+  border-bottom: none;
+}
+.map_area {
+  width: 550px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 20px;
+  border: 1px solid #fff;
+}
+.map_area path {
+  stroke-width:1;
+  stroke:#fff;
+}
+
+
+
+#mortality, #marriage {
+  display: none;
+}
