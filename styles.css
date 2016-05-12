@@ -1,6 +1,4 @@
-/*.center {
-  margin: 0 auto;
-}*/
+/* GENERAL */
 body {
     font-family: "purista-web-n4","purista-web", Arial, Helvetica, sans-serif;
 }
@@ -8,16 +6,24 @@ body {
 h3 {
   font-size: .8rem;
 }
+
+li {
+  font-size: .6rem;
+  text-align: left:
+}
 .map_menu {
   /*width: 600px;*/
   text-align: center;
 }
+
+/* MENU BAR */
 
 button {
   background: #F4F4F4;
   padding: 8px 20px;
   border: 1px solid #ccc;
   margin-right: -5px;
+  font-size: 15px;
 }
 
 button:focus {
@@ -29,20 +35,55 @@ button.selected {
   padding-top: 10px;
   border-bottom: none;
 }
+
+/* MAP */
+
 .map_area {
-  width: 550px;
   margin: 0 auto;
-  text-align: center;
+
+  width: 800px;
   padding: 20px;
   border: 1px solid #fff;
 }
+
+.map_area  h3 {
+  text-align: center;
+}
+
 .map_area path {
   stroke-width:1;
   stroke:#fff;
 }
 
-
-
 #mortality, #marriage {
   display: none;
+}
+
+.map_area {
+  position: relative;
+}
+
+/* MAP MARKER AND INFO WINDOW */
+
+.marker img {
+  position: absolute;
+  top: 330px;  /* chartArea top  */
+  left: 590px; /* chartArea left */
+  width: 20px;
+}
+
+.marker .info {
+  display: none;
+  position: absolute;
+  top: 240px;  /* chartArea top  */
+  left: 380px; /* chartArea left */
+  width: 250px;
+  background-color: white;
+  /*padding: 0 5px;*/
+  border-radius: 3%;
+
+}
+
+.marker:hover .info {
+  display: inline-block;
 }
