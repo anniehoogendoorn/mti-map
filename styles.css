@@ -1,15 +1,21 @@
 /* GENERAL */
 body {
     font-family: "purista-web-n4","purista-web", Arial, Helvetica, sans-serif;
+    margin-top: 50px;
 }
 
-h3 {
+p {
   font-size: .8rem;
 }
 
 li {
   font-size: .6rem;
   text-align: left:
+}
+
+a {
+  text-decoration: none;
+  color: #45A1DD;
 }
 .map_menu {
   /*width: 600px;*/
@@ -65,25 +71,74 @@ button.selected {
 
 /* MAP MARKER AND INFO WINDOW */
 
-.marker img {
+.marker .info h3 {
+  text-align: left;
+}
+
+
+.nepal.marker img {
   position: absolute;
-  top: 330px;  /* chartArea top  */
+  top: 350px;  /* chartArea top  */
   left: 590px; /* chartArea left */
   width: 20px;
 }
 
-.marker .info {
+.nepal.marker .info {
   display: none;
   position: absolute;
-  top: 240px;  /* chartArea top  */
-  left: 380px; /* chartArea left */
+  top: 145px;  /* chartArea top  */
+  left: 295px; /* chartArea left */
   width: 250px;
   background-color: white;
-  /*padding: 0 5px;*/
-  border-radius: 3%;
-
+  border: 1px solid #F4F4F4;
+  padding: 0 10px 20px 25px;
+  border-radius: 2%;
 }
 
-.marker:hover .info {
+.nepal.marker:hover .info {
   display: inline-block;
+}
+
+.uganda.marker img {
+  position: absolute;
+  top: 410px;  /* chartArea top  */
+  left: 480px; /* chartArea left */
+  width: 20px;
+}
+
+.uganda.marker .info {
+  display: none;
+  position: absolute;
+  top: 205px;  /* chartArea top  */
+  left: 185px; /* chartArea left */
+  width: 250px;
+  background-color: white;
+  border: 1px solid #F4F4F4;
+  padding: 0 10px 20px 25px;
+  border-radius: 2%;
+}
+
+.uganda.marker:hover .info {
+  display: inline-block;
+}
+
+
+.elsalvador.marker img {
+  position: absolute;
+  top: 382px;  /* chartArea top  */
+  left: 220px; /* chartArea left */
+  width: 20px;
+}
+
+
+.elsalvador.marker .info {
+  display: none;
+  position: absolute;
+  top: 190px;  /* chartArea top  */
+  left: 185px; /* chartArea left */
+  width: 250px;
+  background-color: white;
+  border: 1px solid #F4F4F4;
+  padding: 0 10px 20px 25px;
+  border-radius: 2%;
 }
