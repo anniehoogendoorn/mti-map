@@ -6,7 +6,9 @@ body {
 
 p {
   font-size: .8rem;
+  color: #53564A;
 }
+
 
 li {
   font-size: .6rem;
@@ -15,7 +17,7 @@ li {
 
 a {
   text-decoration: none;
-  color: #45A1DD;
+  color: #21ACDE;
 }
 .map_menu {
   /*width: 600px;*/
@@ -25,7 +27,7 @@ a {
 /* MENU BAR */
 
 button {
-  background: #F4F4F4;
+  background: #f0f0f1;
   padding: 8px 20px;
   border: 1px solid #ccc;
   margin-right: -5px;
@@ -75,12 +77,26 @@ button.selected {
   text-align: left;
 }
 
+.marker img {
+  width: 18px;
+}
+
+.marker .info {
+  background-color: white;
+  border: 1px solid #F4F4F4;
+  padding: 0 10px 20px 25px;
+  border-radius: 2%;
+  width: 250px;
+}
+
+.marker:hover .info {
+  display: inline-block;
+}
 
 .nepal.marker img {
   position: absolute;
-  top: 350px;  /* chartArea top  */
+  top: 345px;  /* chartArea top  */
   left: 590px; /* chartArea left */
-  width: 20px;
 }
 
 .nepal.marker .info {
@@ -88,11 +104,6 @@ button.selected {
   position: absolute;
   top: 145px;  /* chartArea top  */
   left: 295px; /* chartArea left */
-  width: 250px;
-  background-color: white;
-  border: 1px solid #F4F4F4;
-  padding: 0 10px 20px 25px;
-  border-radius: 2%;
 }
 
 .nepal.marker:hover .info {
@@ -101,21 +112,16 @@ button.selected {
 
 .uganda.marker img {
   position: absolute;
-  top: 410px;  /* chartArea top  */
+  top: 405px;  /* chartArea top  */
   left: 480px; /* chartArea left */
-  width: 20px;
 }
+
 
 .uganda.marker .info {
   display: none;
   position: absolute;
   top: 205px;  /* chartArea top  */
   left: 185px; /* chartArea left */
-  width: 250px;
-  background-color: white;
-  border: 1px solid #F4F4F4;
-  padding: 0 10px 20px 25px;
-  border-radius: 2%;
 }
 
 .uganda.marker:hover .info {
@@ -125,9 +131,8 @@ button.selected {
 
 .elsalvador.marker img {
   position: absolute;
-  top: 382px;  /* chartArea top  */
+  top: 373px;  /* chartArea top  */
   left: 220px; /* chartArea left */
-  width: 20px;
 }
 
 
@@ -136,9 +141,4 @@ button.selected {
   position: absolute;
   top: 190px;  /* chartArea top  */
   left: 185px; /* chartArea left */
-  width: 250px;
-  background-color: white;
-  border: 1px solid #F4F4F4;
-  padding: 0 10px 20px 25px;
-  border-radius: 2%;
 }
